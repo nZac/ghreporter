@@ -1,3 +1,5 @@
+nose.cfg
+.coverage
 .python-version
 build/
 dist/
