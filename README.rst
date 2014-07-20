@@ -2,6 +2,9 @@
 Github Reporter Tool
 ################################################################################
 
+.. image:: https://travis-ci.org/nZac/ghreporter.svg?branch=develop
+    :target: https://travis-ci.org/nZac/ghreporter
+
 The means of this tool is to report statistics from Github and Github
 Enterprise. It was born out of the need to organize activity on 50+
 interconnected repositories in Github Enterprise.
