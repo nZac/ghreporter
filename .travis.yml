@@ -6,6 +6,8 @@ python:
   - "3.3"
   - "3.4"
 # command to install dependencies
-install: "pip install ."
+install:
+    - "pip install ."
+    - "pip install unittest2"
 # command to run tests
 script: nosetests

@@ -1,6 +1,6 @@
 from gh import Github
 
-import unittest
+import unittest2
 from nose.tools import eq_, ok_
 import requests
 
@@ -15,7 +15,7 @@ def api_down():
 
 API_BAD = api_down()
 
-class TestGithub(unittest.TestCase):
+class TestGithub(unittest2.TestCase):
 
     def test_pass_custom_url_for_ghe(self):
         gh = Github("google.com")
@@ -29,7 +29,7 @@ class TestGithub(unittest.TestCase):
         assert gh.host == "github.com"
         assert gh._is_ghe == False
 
-    @unittest.skipIf(API_BAD, "Github API Down")
+    @unittest2.skipIf(API_BAD, "Github API Down")
     def test_can_get_status_of_service(self):
         gh = Github()
         status, reason = gh.status
